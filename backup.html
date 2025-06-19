@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio website of Tushar Tiwari - Web Developer from Indore.">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="api.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo"><span class="highlight">T</span>ushar.</h1>
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I am <span>Tushar</span> Tiwari <br> from Indore</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="User Image" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p  style=" font-size: 22px;" >
+            I’m a passionate web developer with a strong foundation in front-end technologies like HTML, CSS, JavaScript, and React. With hands-on experience building real-world projects, including an AI-based Trip Planner and a ticketing platform named TicketMate, I enjoy turning complex problems into user-friendly solutions. I’m continuously learning and growing, currently focused on mastering backend development and cloud services like AWS. My goal is to join a forward-thinking tech company where I can contribute, collaborate, and create meaningful digital experiences.      
+          </p>
+          <div class="tab-titles">
+            <div class="tab-links active-link" onclick="opentab('skills', event)">Skills</div>
+            <div class="tab-links" onclick="opentab('experience', event)">Experience</div>
+            <div class="tab-links" onclick="opentab('education', event)">Education</div>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages</span><br>C, C++, HTML, CSS, JavaScript</li>
+              <li><span>Technologies/Frameworks</span><br> React.js, Node.js, AWS</li>
+              <li><span>Concepts</span><br>Object-Oriented Programming (OOP), Database Management Systems (DBMS),<br> Data Structures
+ and Algorithms (DSA)</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span> Advanced Cloud Foundation Program | Infosys
+               </span><br><> Gained hands-on experience in designing and managing cloud solutions using AWS services like EC2, S3,
+                 RDS, and ELB.<br><br><> Developed expertise in optimizing cloud performance and building scalable architectures through practical
+                training.<br><br><>Acquired a strong foundation in cloud security, automation, and best practices for efficient cloud
+                management.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>B.Tech</span><br>Acropolis Institute of Technology and Research,Indore<br>(Computer Science and Engineering)</li>
+              <li><span>Class 12th </span><br>RDPS , Bhopal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In non optio ratione vero quisquam vitae.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In non optio ratione vero quisquam vitae.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In non optio ratione vero quisquam vitae.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="Work 1">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>The app connects you to talented people around the world.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="Work 2">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>The app connects you to talented people around the world.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="Work 3">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>The app connects you to talented people around the world.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> tush2003tiwari.com</p>
+          <p><i class="fas fa-phone-square-alt"></i> 9691556571</p>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/Tushar-Resume (2).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea> 
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Made by Tushar Tiwari</p>
+    </div>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ6lhJyiT85V31iqrTS51O50Oovn-BT8HNr9TxdUqcQDMG36CWVcJSMkrz4oMDffSj/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(() => { msg.innerHTML = ""; }, 5000);
+          form.reset();
+        })
+        .catch(error => {
+          msg.innerHTML = "Something went wrong!";
+          console.error('Error!', error.message);
+        });
+    });
+
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event){
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    const sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>

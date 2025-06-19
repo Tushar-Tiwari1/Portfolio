@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio website of Tushar Tiwari - Web Developer from Indore.">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="api.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #080808;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      margin-top: 50px;
+    }
+
+    .services-list div {
+      background: #262626;
+      padding: 30px;
+      font-size: 14px;
+      font-weight: 300;
+      border-radius: 10px;
+      transition: background 0.5s, transform 0.5s;
+    }
+
+    .services-list div:hover {
+      background: #ff0066;
+      transform: translateY(-10px);
+    }
+
+    .services-list h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .services-list ul,
+    .services-list p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .services-list ul {
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    .services-list ul li {
+      list-style-type: disc;
+      margin-left: 10px;
+    }
+
+    .services-list strong {
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .highlight {
+      color: #ff0066;
+    }
+
+    .location {
+      font-size: 24px;
+      color: #ccc;
+    }
+
+    .sub-title {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo"><span class="highlight">T</span>ushar.</h1>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#more-about">More About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I am <span>Tushar</span> Tiwari <br>from Indore</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/my.jpeg" alt="User Image" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p style="font-size: 22px;">
+            I’m a passionate web developer with a strong foundation in front-end technologies like HTML, CSS, JavaScript, and React. With hands-on experience building real-world projects, including an AI-based Trip Planner and a ticketing platform named TicketMate, I enjoy turning complex problems into user-friendly solutions. I’m continuously learning and growing, currently focused on mastering backend development and cloud services like AWS. My goal is to join a forward-thinking tech company where I can contribute, collaborate, and create meaningful digital experiences.      
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More About Me (Skills, Experience, Education) -->
+  <div class="container" id="more-about">
+    <h1 class="sub-title">More About Me</h1>
+    <div class="services-list">
+      
+      <!-- Skills -->
+      <div>
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong></p>
+        <ul>
+          <li>C, C++,HTML5, CSS3, JavaScript</li>
+        </ul>
+        <p><strong>Frontend Development:</strong></p>
+        <ul>
+          <li>React.js (Hooks, Router, Axios, State Management)</li>
+        </ul>
+        <p><strong>Cloud / Deployment:</strong></p>
+        <ul>
+          <li>AWS EC2, S3, RDS (basic)</li>
+        </ul>
+      </div>
+
+      <!-- Experience -->
+      <div>
+        <h2>Experience</h2>
+        <p><strong>Advanced Cloud Foundation Program | Infosys</strong></p>
+        <p>
+          <strong>➤</strong> Designed and managed <strong>AWS</strong> services like EC2, S3, RDS, ELB.<br>
+          <strong>➤</strong> Built scalable cloud architectures.<br>
+          <strong>➤</strong> Hands-on experience in cloud security and automation.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div>
+        <h2>Education</h2>
+        <p><strong>B.Tech</strong><br>Acropolis Institute of Technology and Research, Indore (CSE)</p>
+        <p><strong>Class 12th</strong><br>RDPS, Bhopal</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>Web Design</h2>
+          <p>Responsive & modern layouts using HTML, CSS, and UI tools like Figma.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>UI/UX Design</h2>
+          <p>Wireframes, prototypes, and user-focused designs for web and mobile apps.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <h2>App Development</h2>
+          <p>Full-stack development of Android/web apps using MERN stack.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="work-list">
+
+      <!-- AI Trip Planner -->
+      <div class="work">
+        <img src="images/aitripplanner.jpg" alt="AI Trip Planner">
+        <div class="layer">
+          <h3>AI Trip Planner</h3>
+          <p>An intelligent travel planning web app that generates custom itineraries based on user inputs like destination, days, members, and budget using AI.</p>
+          <a href="https://ai-travel-plan-sigma.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <!-- TicketMate -->
+      <div class="work">
+        <img src="images/ticketmate.jpg" alt="TicketMate">
+        <div class="layer">
+          <h3>TicketMate</h3>
+          <p>A ticket reselling platform for concerts, sports, and events where users can buy and sell verified tickets easily and securely.</p>
+          <a href="https://your-ticketmate-link.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <!-- E-commerce Website -->
+      <div class="work">
+        <img src="images/ecommerce.jpg" alt="E-commerce Website">
+        <div class="layer">
+          <h3>E-commerce Website</h3>
+          <p>Built a responsive online store with features like product catalog, cart system, order summary, and integrated secure checkout.</p>
+          <a href="https://your-ecommerce-site.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> tush2003tiwari@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i> 9691556571</p><br>
+          <div class="social-icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/Tushar-Resume (2).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea> 
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Made by Tushar Tiwari</p>
+    </div>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZ6lhJyiT85V31iqrTS51O50Oovn-BT8HNr9TxdUqcQDMG36CWVcJSMkrz4oMDffSj/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(() => { msg.innerHTML = ""; }, 5000);
+          form.reset();
+        })
+        .catch(error => {
+          msg.innerHTML = "Something went wrong!";
+          console.error('Error!', error.message);
+        });
+    });
+
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
