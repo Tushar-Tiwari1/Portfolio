@@ -13,6 +13,37 @@ body {
   background: #080808;
   color: #fff;
 }
+/*--------------------*/
+.hero-img {
+      width: 220px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(255, 0, 102, 0.6);
+      animation: zoomIn 2s ease-in-out;
+    }
+     @keyframes zoomIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+     h1 {
+      margin-top: 20px;
+      font-size: 32px;
+    }
+    .btn {
+      margin-top: 30px;
+      background-color: #ff0066;
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+     .btn:hover {
+      background-color: #e6005c;
+    }
+/*--------------------*/
 
 #header {
   width: 100%;
@@ -182,6 +213,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 
+
 .services-list div {
   background: #262626;
   padding: 40px;
@@ -195,6 +227,7 @@ nav ul li a:hover::after {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
+  
 }
 
 .services-list div a {
@@ -460,3 +493,4 @@ nav .fas {
   margin-top: -40px;
   display: block;
 }
+
